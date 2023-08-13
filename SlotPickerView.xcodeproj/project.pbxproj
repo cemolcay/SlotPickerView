@@ -13,6 +13,7 @@
 		C120ADE62A891EBB003432B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C120ADE42A891EBB003432B8 /* Main.storyboard */; };
 		C120ADE82A891EBC003432B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C120ADE72A891EBC003432B8 /* Assets.xcassets */; };
 		C120ADEB2A891EBC003432B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C120ADE92A891EBC003432B8 /* LaunchScreen.storyboard */; };
+		C120ADF52A891ED7003432B8 /* SlotPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120ADF42A891ED7003432B8 /* SlotPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C120ADE72A891EBC003432B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C120ADEA2A891EBC003432B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C120ADEC2A891EBC003432B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C120ADF42A891ED7003432B8 /* SlotPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,27 @@
 				C120ADDE2A891EBB003432B8 /* AppDelegate.swift */,
 				C120ADE02A891EBB003432B8 /* SceneDelegate.swift */,
 				C120ADE22A891EBB003432B8 /* ViewController.swift */,
+				C120ADF22A891ED7003432B8 /* Sources */,
 				C120ADE42A891EBB003432B8 /* Main.storyboard */,
 				C120ADE72A891EBC003432B8 /* Assets.xcassets */,
 				C120ADE92A891EBC003432B8 /* LaunchScreen.storyboard */,
 				C120ADEC2A891EBC003432B8 /* Info.plist */,
+			);
+			path = SlotPickerView;
+			sourceTree = "<group>";
+		};
+		C120ADF22A891ED7003432B8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C120ADF32A891ED7003432B8 /* SlotPickerView */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		C120ADF32A891ED7003432B8 /* SlotPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C120ADF42A891ED7003432B8 /* SlotPickerView.swift */,
 			);
 			path = SlotPickerView;
 			sourceTree = "<group>";
@@ -140,6 +159,7 @@
 			files = (
 				C120ADE32A891EBB003432B8 /* ViewController.swift in Sources */,
 				C120ADDF2A891EBB003432B8 /* AppDelegate.swift in Sources */,
+				C120ADF52A891ED7003432B8 /* SlotPickerView.swift in Sources */,
 				C120ADE12A891EBB003432B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
