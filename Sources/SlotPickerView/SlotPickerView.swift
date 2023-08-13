@@ -41,7 +41,7 @@ public class SlotPickerView: UIView {
         guard slotCount > 0, currentIndex == nil,
         let location = touches.first?.location(in: self) else { return }
         let slotWidth = frame.size.width / CGFloat(slotCount)
-        let index = Int(location.x / slotWidth)
+        let index = min(Int(location.x / slotWidth), (slotCount - 1))
         
         currentIndex = index
         startIndex = index
@@ -59,7 +59,7 @@ public class SlotPickerView: UIView {
         guard slotCount > 0, currentIndex != nil, pickedSlots.last != nil,
         let location = touches.first?.location(in: self) else { return }
         let slotWidth = frame.size.width / CGFloat(slotCount)
-        let index = Int(location.x / slotWidth)
+        let index = min(Int(location.x / slotWidth), (slotCount - 1))
         guard index != currentIndex else { return }
         currentIndex = index
         
@@ -77,6 +77,25 @@ public class SlotPickerView: UIView {
     }
     
     func removeCollisions(for slot: SlotItemData) {
+        // come from left side - push start position to left
+            
+            // if the new end position passes the collision end position, remove it
+        
+        // come from inside
+        
+            // towards left = push end position to left,
+        
+                // if the new start position passes the collision start position, remove it
+        
+            // towards right = push start position to right
+            
+                // if the new end position passes the collision end position, remove it
+        
+        // come from right side - push end position to left
+        
+            // if the new start position passes the collision start position, remove it
+        
+        
         var removeIndicies = [Int]()
         for (i, pickedSlot) in pickedSlots.enumerated() {
             if pickedSlot.id == slot.id { continue }
