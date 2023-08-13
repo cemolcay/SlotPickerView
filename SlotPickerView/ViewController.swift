@@ -49,7 +49,9 @@ class ViewController: UIViewController, SlotPickerViewDelegate {
         slotDisplay.arrangedSubviews.forEach({ $0.backgroundColor = .gray })
         for slot in slotPickerView.pickedSlots {
             for i in slot.startIndex...slot.endIndex {
-                slotDisplay.arrangedSubviews[i].backgroundColor = .red
+                if slotDisplay.arrangedSubviews.indices.contains(i) {
+                    slotDisplay.arrangedSubviews[i].backgroundColor = .red
+                }
             }
         }
     }
